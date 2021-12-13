@@ -14,7 +14,7 @@ const apiRouter = require('./api/apiRouter');
 app.use('/api', getLatestBlock, apiRouter);
 app.use(express.static(path))
 
-
+//
 app.get('/', function (req, res) {
   res.sendFile(path + "index.html");
 });
